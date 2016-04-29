@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D8009EEA1CD31F2D007FA714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8009EE91CD31F2D007FA714 /* AppDelegate.swift */; };
-		D8009EEC1CD31F2D007FA714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8009EEB1CD31F2D007FA714 /* ViewController.swift */; };
-		D8009EEF1CD31F2D007FA714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8009EED1CD31F2D007FA714 /* Main.storyboard */; };
+		D8009EEC1CD31F2D007FA714 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8009EEB1CD31F2D007FA714 /* MainController.swift */; };
 		D8009EF11CD31F2D007FA714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8009EF01CD31F2D007FA714 /* Assets.xcassets */; };
 		D8009EF41CD31F2D007FA714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8009EF21CD31F2D007FA714 /* LaunchScreen.storyboard */; };
+		D8009EFC1CD31F84007FA714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8009EFB1CD31F84007FA714 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8009EE61CD31F2D007FA714 /* NotePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8009EE91CD31F2D007FA714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8009EEB1CD31F2D007FA714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8009EEE1CD31F2D007FA714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8009EEB1CD31F2D007FA714 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		D8009EF01CD31F2D007FA714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8009EF31CD31F2D007FA714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8009EF51CD31F2D007FA714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8009EFB1CD31F84007FA714 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				D8009EE91CD31F2D007FA714 /* AppDelegate.swift */,
-				D8009EEB1CD31F2D007FA714 /* ViewController.swift */,
-				D8009EED1CD31F2D007FA714 /* Main.storyboard */,
+				D8009EEB1CD31F2D007FA714 /* MainController.swift */,
 				D8009EF01CD31F2D007FA714 /* Assets.xcassets */,
 				D8009EF21CD31F2D007FA714 /* LaunchScreen.storyboard */,
+				D8009EFB1CD31F84007FA714 /* Main.storyboard */,
 				D8009EF51CD31F2D007FA714 /* Info.plist */,
 			);
 			path = NotePad;
@@ -122,9 +122,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8009EFC1CD31F84007FA714 /* Main.storyboard in Resources */,
 				D8009EF41CD31F2D007FA714 /* LaunchScreen.storyboard in Resources */,
 				D8009EF11CD31F2D007FA714 /* Assets.xcassets in Resources */,
-				D8009EEF1CD31F2D007FA714 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8009EEC1CD31F2D007FA714 /* ViewController.swift in Sources */,
+				D8009EEC1CD31F2D007FA714 /* MainController.swift in Sources */,
 				D8009EEA1CD31F2D007FA714 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8009EED1CD31F2D007FA714 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8009EEE1CD31F2D007FA714 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8009EF21CD31F2D007FA714 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -252,6 +244,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotePad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appable.NotePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +256,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NotePad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appable.NotePad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
